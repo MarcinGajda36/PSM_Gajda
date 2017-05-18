@@ -65,13 +65,15 @@ public class MainActivity extends ListActivity {
 
         @Override
         protected String doInBackground(String... urls) {
-            Log.e(Psm_log, "doInBackground + urls: " + urls);
+            Log.e(Psm_log, "doInBackground + urls: " + urls.toString());
 
             String response = "";
 
             try {
                 URL url = new URL(urls[0]);
                 HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+                conn.setConnectTimeout(3000);
+                conn.setReadTimeout(3000);
                 conn.connect();
                 InputStream is = conn.getInputStream();
                 BufferedReader br = new BufferedReader(new InputStreamReader(is));
