@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- name Label -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:text="Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <!-- id label -->
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="2dip"
+        android:text="id" />
+    <!-- price_usd label -->
+    <TextView
+        android:id="@+id/price_usd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="price_usd: "
+        android:gravity="center"/>
+    <!-- percent_change_24h label -->
+    <TextView
+        android:id="@+id/percent_change_24h"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="percent_change_24h: "
+        android:gravity="center"/>
+
+</LinearLayout>
